@@ -23,6 +23,7 @@ body {
 
 a {
   text-decoration: none;
+  display: block;
 }
 
 ul {
@@ -79,6 +80,7 @@ img {
 
 .site-nav .list {
   display: flex;
+  position: relative;
 }
 
 .site-nav .item + .item {
@@ -392,6 +394,15 @@ img {
   padding-bottom: 60px;
 }
 
+.footer .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-social {
+  margin-left: 70px;
+}
+
 .footer .logo {
   display: inline-block;
   margin-bottom: 28px;
@@ -426,14 +437,9 @@ img {
   color: var(--color-action);
 }
 
-.footer .container {
-  display: flex;
-  gap: 70px;
-}
-
 .footer-social p {
-  margin-top: 12px;
   margin-bottom: 20px;
+  margin-top: 0;
 
   text-transform: uppercase;
   color: var(--color-invert);
@@ -442,7 +448,7 @@ img {
   line-height: calc(16 / 14);
 }
 
-.footer-social .list {
+.footer-social-list {
   display: flex;
   gap: 10px;
 }
@@ -491,7 +497,7 @@ img {
 }
 
 .button.filter:hover,
-button.filter:focus {
+.button.filter:focus {
   background-color: var(--color-brand);
   color: var(--color-invert);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
@@ -508,8 +514,8 @@ button.filter:focus {
   margin-bottom: 30px;
 }
 
-.projects .list:hover,
-.projects .list:focus {
+.projects-list-link:hover,
+.projects-list-link:focus {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
     0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
