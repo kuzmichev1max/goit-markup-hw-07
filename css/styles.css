@@ -428,7 +428,8 @@ img {
   width: 170px;
   height: 92px;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-list-link:hover,
@@ -450,6 +451,10 @@ img {
 .footer .container {
   display: flex;
   align-items: baseline;
+}
+
+.footer-adress address {
+  font-style: normal;
 }
 
 .footer-social {
@@ -521,8 +526,7 @@ img {
   );
   border-radius: 50%;
 
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-link:hover,
@@ -552,7 +556,8 @@ img {
   cursor: pointer;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button.filter:hover,
@@ -571,6 +576,10 @@ img {
 .projects .list {
   margin-right: 30px;
   margin-bottom: 30px;
+}
+
+.projects-list-link {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects-list-link:hover,
@@ -669,7 +678,6 @@ img {
 
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.5);
-  opacity: 0;
 }
 
 .modal {
@@ -684,7 +692,8 @@ img {
   border-radius: 4px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-  opacity: 1;
+  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1),
+  transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal .button {
