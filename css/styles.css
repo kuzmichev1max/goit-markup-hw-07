@@ -565,7 +565,7 @@ img {
   letter-spacing: 0.48px;
 }
 
-.footer-subscribe-form label {
+.footer-subscribe p {
   text-transform: uppercase;
   color: var(--color-invert);
   font-weight: 700;
