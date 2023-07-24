@@ -180,7 +180,8 @@ img {
   max-width: 1600px;
 
   background-position: center;
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -429,7 +430,7 @@ img {
   height: 92px;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-list-link:hover,
@@ -532,6 +533,44 @@ img {
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: var(--color-brand);
+}
+
+.footer-subscribe {
+  margin-left: 93px;
+}
+
+.footer-subscribe-field {
+  display: flex;
+  margin-top: 20px;
+}
+
+.footer-subscribe-field input {
+  margin-right: 12px;
+  padding: 15px 16px;
+
+  width: 358px;
+  height: 50px;
+
+  color: var(--color-invert);
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(33, 150, 243, 0);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.footer-subscribe-field input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  line-height: calc(20/16);
+  letter-spacing: 0.48px;
+}
+
+.footer-subscribe-form label {
+  text-transform: uppercase;
+  color: var(--color-invert);
+  font-weight: 700;
+  letter-spacing: 0.42px;
+  line-height: calc(16 / 14);
 }
 
 /* portfolio */
@@ -667,7 +706,7 @@ img {
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1),
-  visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -685,6 +724,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
+  padding: 40px;
 
   width: 528px;
   height: 581px;
@@ -693,7 +733,7 @@ img {
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1),
-  transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal .button {
@@ -710,4 +750,113 @@ img {
   border-radius: 50%;
   fill: var(--color-logo);
   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.modal-title {
+  margin-top: 0;
+  text-align: center;
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  color: var(--color-caption);
+  line-height: calc(23 / 20);
+}
+
+.modal-form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-form-label {
+  margin-bottom: 4px;
+  display: inline-block;
+}
+
+.modal-form-input {
+  margin-bottom: 10px;
+  height: 40px;
+  padding: 12px;
+
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  cursor: pointer;
+  line-height: calc(14 / 12);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.12px;
+}
+
+.modal-form-input.comment {
+  margin-bottom: 20px;
+  padding: 12px 16px;
+
+  height: 120px;
+  resize: none;
+}
+
+.modal-form-input::placeholder {
+  line-height: calc(14 / 12);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.12px;
+}
+
+.modal-form-policy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-form-policy input[type="checkbox"] {
+  width: 16px;
+  height: 15px;
+}
+
+.modal-form-policy-text {
+  display: flex;
+  margin-left: 7px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.42px;
+}
+
+.modal-form-policy-link {
+  margin-left: 4px;
+  color: var(--color-brand);
+  line-height: calc(24 / 14);
+  letter-spacing: 0.42px;
+  text-decoration-line: underline;
+}
+
+.modal-form-submit {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.submit-btn {
+  height: 50px;
+  min-width: 200px;
+  padding: 10px 24px;
+
+  border: 1px solid transparent;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: var(--color-brand);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: var(--color-invert);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
+  background-color: var(--color-action);
 }
