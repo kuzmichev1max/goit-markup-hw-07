@@ -435,10 +435,14 @@
       </div>
       <div class="footer-subscribe">
         <form action="" class="footer-subscribe-form">
-          <div class="footer-subscribe-field">
             <label for="email-subscribe">Підпишіться на розсилку</label>
+            <div class="footer-subscribe-field">
             <input type="email" name="email-subscribe" id="email-subscribe" placeholder="E-mail">
-            <button type="submit" class="submit-btn">Підписатися</button>
+            <button type="submit" class="submit-btn">Підписатися
+              <svg height="24" width="24">
+                <use href="./images/sprite.svg#icon-send" ></use>
+              </svg>
+            </button>
           </div>
         </form>
       </div>
@@ -446,31 +450,54 @@
   </footer>
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-      <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+      <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
       <form action="" class="modal-form">
         <div class="modal-form-field">
-          <label for="name" class="modal-form-label">Ім'я</label>
-          <input type="text" name="name" id="name" class="modal-form-input"></input>
+          <label class="modal-form-label">
+            <span>Ім'я</span>
+            <div class="modal-form-input-wrapper">
+              <input type="text" name="name" class="modal-form-input">
+              <svg class="modal-form-icon" height="18" width="18">
+                <use href="./images/sprite.svg#icon-person-black"></use>
+              </svg>
+            </div>
+          </label>
         </div>
 
         <div class="modal-form-field">
-          <label for="tel" class="modal-form-label">Телефон</label>
-          <input type="tel" name="tel" id="tel" class="modal-form-input"></input>
+          <label for="tel" class="modal-form-label">
+            <span>Телефон</span>
+            <div class="modal-form-input-wrapper">
+              <input type="tel" name="tel" class="modal-form-input">
+              <svg class="modal-form-icon" height="18" width="18">
+                <use href="./images/sprite.svg#icon-phone-black"></use>
+              </svg>
+            </div>
+          </label>
         </div>
 
         <div class="modal-form-field">
-          <label for="email" class="modal-form-label">Пошта</label>
-          <input type="email" name="email" id="email" class="modal-form-input"></input>
+          <label for="email" class="modal-form-label">
+            <span>Пошта</span>
+            <div class="modal-form-input-wrapper">
+              <input type="email" name="email" class="modal-form-input">
+              <svg class="modal-form-icon" height="18" width="18">
+                <use href="./images/sprite.svg#icon-email"></use>
+              </svg>
+            </div>
+          </label>
         </div>
 
         <div class="modal-form-field">
-          <label for="comment" class="modal-form-label">Коментар</label>
+          <label for="comment" class="modal-form-label">
+            <span>Коментар</span>
+          </label>
           <textarea name="comment" id="comment" class="modal-form-input comment" placeholder="Введіть текст"></textarea>
         </div>
 
         <div class="modal-form-policy">
-          <input type="checkbox" name="policy" id="policy">
-          <label class="modal-form-policy-text" for="policy">Погоджуюся з розсилкою та приймаю
+          <input class="modal-form-checkbox visually-hidden" type="checkbox" name="policy" id="policy" value="policy">
+          <label class="modal-form-policy-label" for="policy">Погоджуюся з розсилкою та приймаю
             <a href="" class="modal-form-policy-link">Умови договору</a>
           </label>
         </div>
@@ -480,7 +507,7 @@
       </form>
       <button class="button" data-modal-close>
         <svg class="button-close-icon" height="18" width="18">
-          <use href="./images/sprite.svg#icon-close-black"></use>
+          <use href="./images/sprite.svg#icon-close"></use>
         </svg>
       </button>
     </div>
