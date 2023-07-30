@@ -148,8 +148,8 @@
             </div>
           </li>
         </ul>
+        </div>
     </section>
-    </div>
     <section class="section team">
       <div class="container">
         <h2 class="team title">Наша команда</h2>
@@ -390,8 +390,8 @@
             </li>
             <li class="list">
               <a class="contact-link-footer" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li class="list">
-            <li>
+            </li>
+            <li class="list">
               <a class="contact-link-footer" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
           </ul>
@@ -434,13 +434,13 @@
         </ul>
       </div>
       <div class="footer-subscribe">
-        <form action="" class="footer-subscribe-form">
+        <form class="footer-subscribe-form">
             <label for="email-subscribe">Підпишіться на розсилку</label>
             <div class="footer-subscribe-field">
             <input type="email" name="email-subscribe" id="email-subscribe" placeholder="E-mail">
             <button type="submit" class="submit-btn">Підписатися
               <svg height="24" width="24">
-                <use href="./images/sprite.svg#icon-send" ></use>
+                <use href="./images/sprite.svg#icon-send"></use>
               </svg>
             </button>
           </div>
@@ -451,40 +451,40 @@
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
-      <form action="" class="modal-form">
+      <form class="modal-form">
         <div class="modal-form-field">
           <label class="modal-form-label">
             <span>Ім'я</span>
-            <div class="modal-form-input-wrapper">
+            <span class="modal-form-input-wrapper">
               <input type="text" name="name" class="modal-form-input">
               <svg class="modal-form-icon" height="18" width="18">
                 <use href="./images/sprite.svg#icon-person-black"></use>
               </svg>
-            </div>
+            </span>
           </label>
         </div>
 
         <div class="modal-form-field">
-          <label for="tel" class="modal-form-label">
+          <label class="modal-form-label">
             <span>Телефон</span>
-            <div class="modal-form-input-wrapper">
+            <span class="modal-form-input-wrapper">
               <input type="tel" name="tel" class="modal-form-input">
               <svg class="modal-form-icon" height="18" width="18">
                 <use href="./images/sprite.svg#icon-phone-black"></use>
               </svg>
-            </div>
+            </span>
           </label>
         </div>
 
         <div class="modal-form-field">
           <label for="email" class="modal-form-label">
             <span>Пошта</span>
-            <div class="modal-form-input-wrapper">
-              <input type="email" name="email" class="modal-form-input">
+            <span class="modal-form-input-wrapper">
+              <input id="email" type="email" name="email" class="modal-form-input">
               <svg class="modal-form-icon" height="18" width="18">
                 <use href="./images/sprite.svg#icon-email"></use>
               </svg>
-            </div>
+            </span>
           </label>
         </div>
 

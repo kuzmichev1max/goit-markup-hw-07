@@ -472,6 +472,7 @@ img {
 }
 
 .adress-link-footer {
+  width: 231px;
   line-height: calc(24 / 14);
   color: var(--color-invert);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -541,6 +542,7 @@ img {
 
 .footer-subscribe-field {
   display: flex;
+  justify-content: space-between;
   margin-top: 20px;
 }
 
@@ -733,6 +735,8 @@ img {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   padding: 40px;
+  display: flex;
+  flex-direction: column;
 
   width: 528px;
   height: 581px;
@@ -768,8 +772,10 @@ img {
 
 .modal-title {
   margin-top: 0;
-  text-align: center;
+  margin-bottom: 12px;
+  display: inline-block;
 
+  text-align: center;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -875,8 +881,12 @@ img {
   cursor: pointer;
 }
 
+.modal-form-checkbox:focus + .modal-form-policy-label::before {
+  outline: 1px solid rgba(0, 0, 255, 0.5);
+}
+
 .modal-form-checkbox:checked + .modal-form-policy-label::before {
-  background-image: url('../images/icon-check.svg');
+  background-image: url("../images/icon-check.svg");
   background-size: contain;
   border: none;
 }
