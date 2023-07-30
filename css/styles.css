@@ -791,6 +791,12 @@ img {
   margin-bottom: 10px;
 }
 
+.modal-form-input-wrapper {
+  display: inline-block;
+  margin-top: 4px;
+  width: 100%;
+}
+
 .modal-form-label span {
   line-height: calc(14 / 12);
   font-size: 12px;
@@ -836,7 +842,6 @@ img {
 
 .modal-form-input-wrapper {
   position: relative;
-  margin-top: 4px;
 }
 
 .modal-form-icon {
