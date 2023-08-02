@@ -1,6 +1,10 @@
-@import url(./components/_page-header.scss);
-@import url(./components/_page-footer.scss);
-@import url(./utils/_variables.scss);
-@import url(./components/_logo.scss);
-@import url(./components/_page-header.scss);
-@import url(./components/_page-header.scss);
+@import './utils/variables';
+@import './base/commons';
+@import './utils/visually-hidden';
+@import './base/container';
+@import './components/page-header';
+@import './components/page-footer';
+@import './components/logo';
+@import './components/site-nav';
+@import './components/auth-nav';
+@import './components/buttons';
