@@ -11,49 +11,40 @@
   align-items: baseline;
 }
 
-.footer-contacts__adress {
+.footer-adress {
   font-style: normal;
+  margin-top: 28px;
 }
 
 .footer-social {
   margin-left: 70px;
 }
 
-.footer-contacts__adress {
-  margin-top: 28px;
-}
-
 .footer-link {
   color: var(--color-invert);
 }
 
-.adress-link-footer {
+.footer-adress__link {
   width: 231px;
   line-height: calc(24 / 14);
-  color: var(--color-invert);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-contacts__item {
-  margin-bottom: 12px;
-}
-
-.contact-link-footer {
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.adress-link-footer:hover,
-.adress-link-footer:focus {
+.footer-adress__link--invert {
+  color: var(--color-invert);
+}
+
+.footer-adress__item {
+  margin-bottom: 12px;
+}
+
+.footer-adress__link:hover,
+.footer-adress__link:focus {
   color: var(--color-action);
 }
 
-.contact-link-footer:hover,
-.contact-link-footer:focus {
-  color: var(--color-action);
-}
-
-.footer-social p {
+.join-us {
   margin-bottom: 20px;
   margin-top: 0;
 
@@ -64,12 +55,12 @@
   line-height: calc(16 / 14);
 }
 
-.footer-social-list {
+.footer-social__list {
   display: flex;
   gap: 10px;
 }
 
-.footer-social-link {
+.footer-social__link {
   width: 44px;
   height: 44px;
   display: flex;
@@ -87,8 +78,8 @@
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-social-link:hover,
-.footer-social-link:focus {
+.footer-social__link:hover,
+.footer-social__link:focus {
   background-color: var(--color-brand);
 }
 
@@ -96,13 +87,25 @@
   margin-left: 93px;
 }
 
-.footer-subscribe-field {
+.footer-subscribe__form {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
+  flex-wrap: wrap;
 }
 
-.footer-subscribe-field input {
+.footer-subscribe__text {
+  width: 100%;
+  display: inline-block;
+
+  text-transform: uppercase;
+  color: var(--color-invert);
+  font-weight: 700;
+  letter-spacing: 0.42px;
+  line-height: calc(16 / 14);
+}
+
+.footer-subscribe__input {
   margin-right: 12px;
   padding: 15px 16px;
 
@@ -117,24 +120,14 @@
   translate: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-subscribe-field input::placeholder {
+.footer-subscribe__input::placeholder {
   color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
   line-height: calc(20 / 16);
   letter-spacing: 0.48px;
 }
 
-.footer-subscribe-field input:focus {
+.footer-subscribe__input:focus {
   outline: none;
   border-color: var(--color-brand);
-}
-
-.footer-subscribe label {
-  width: 100%;
-
-  text-transform: uppercase;
-  color: var(--color-invert);
-  font-weight: 700;
-  letter-spacing: 0.42px;
-  line-height: calc(16 / 14);
 }
