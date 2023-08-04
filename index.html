@@ -18,9 +18,9 @@
 </head>
 
 <body>
-  <header class="page-header">
-    <div class="container">
-      <a href="index.html" lang="en" class="logo">Web<span class="logo__text">Studio</span></a>
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" lang="en" class="header-logo">Web<span class="logo__text">Studio</span></a>
       <nav class="site-nav">
         <ul class="site-nav__list">
           <li class="site-nav__item">
@@ -379,20 +379,20 @@
   </main>
 
   <footer class="page-footer">
-    <div class="container">
-      <div class="footer-adress">
-        <a href="index.html" lang="en" class="logo">Web<span class="logo__text--invert">Studio</span></a>
-        <address>
-          <ul>
-            <li class="list">
+    <div class="container footer-container">
+      <div class="footer-contacts">
+        <a href="index.html" lang="en" class="footer-logo">Web<span class="logo__text--invert">Studio</span></a>
+        <address class="footer-contacts__adress">
+          <ul class="footer-contacts__list">
+            <li class="footer-contacts__item">
               <a class="adress-link-footer" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank"
                 rel="noopener noreferrer nofollow">г. Київ, пр-т Леси Українки, 26
               </a>
             </li>
-            <li class="list">
+            <li class="footer-contacts__item">
               <a class="contact-link-footer" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
-            <li class="list">
+            <li class="footer-contacts__item">
               <a class="contact-link-footer" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
           </ul>
@@ -439,7 +439,7 @@
           <label for="email-subscribe">Підпишіться на розсилку</label>
           <div class="footer-subscribe-field">
             <input type="email" name="email-subscribe" id="email-subscribe" placeholder="E-mail">
-            <button type="submit" class="submit-btn">Підписатися
+            <button type="submit" class="button submit-button">Підписатися
               <svg height="24" width="24">
                 <use href="./images/sprite.svg#icon-send"></use>
               </svg>
@@ -503,10 +503,10 @@
           </label>
         </div>
         <div class="modal-form-submit">
-          <button type="submit" class="button submit-btn">Відправити</button>
+          <button type="submit" class="button submit--btn">Відправити</button>
         </div>
       </form>
-      <button class="modal-button" data-modal-close>
+      <button class="modal--button" data-modal-close>
         <svg class="button-close-icon" height="18" width="18">
           <use href="./images/sprite.svg#icon-close"></use>
         </svg>
