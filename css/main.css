@@ -116,6 +116,10 @@ img {
   margin-bottom: 12px;
 }
 
+.footer-adress__item:last-child {
+  margin-bottom: 0;
+}
+
 .footer-adress__link:hover,
 .footer-adress__link:focus {
   color: var(--color-action);
