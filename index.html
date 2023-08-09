@@ -58,7 +58,7 @@
     <section class="section section-hero">
       <div class="container hero-container">
         <h1 class="section-hero__heading">Ефективні рішення для вашого бізнесу</h1>
-        <button class="button section-hero__button" type="button" data-modal-open>Замовити послугу</button>
+        <button class="button button--hero" type="button" data-modal-open>Замовити послугу</button>
       </div>
     </section>
 
@@ -450,68 +450,70 @@
   </footer>
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-      <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+      <h3 class="modal__title">Залиште свої дані, ми вам передзвонимо</h3>
       <form class="modal-form">
-        <div class="modal-form-field">
-          <label class="modal-form-label">
-            <span>Ім'я</span>
-            <span class="modal-form-input-wrapper">
-              <input type="text" name="name" class="modal-form-input">
-              <svg class="modal-form-icon" height="18" width="18">
+        <div class="modal-form__field">
+          <label class="modal-form__label">
+            <span class="modal-form__name">Ім'я</span>
+            <span class="modal-form__input-wrapper">
+              <input type="text" name="name" class="modal-form__input">
+              <svg class="modal-form__icon" height="18" width="18">
                 <use href="./images/sprite.svg#icon-person-black"></use>
               </svg>
             </span>
           </label>
         </div>
 
-        <div class="modal-form-field">
-          <label class="modal-form-label">
-            <span>Телефон</span>
-            <span class="modal-form-input-wrapper">
-              <input type="tel" name="tel" class="modal-form-input">
-              <svg class="modal-form-icon" height="18" width="18">
+        <div class="modal-form__field">
+          <label class="modal-form__label">
+            <span class="modal-form__name">Телефон</span>
+            <span class="modal-form__input-wrapper">
+              <input type="tel" name="tel" class="modal-form__input">
+              <svg class="modal-form__icon" height="18" width="18">
                 <use href="./images/sprite.svg#icon-phone-black"></use>
               </svg>
             </span>
           </label>
         </div>
 
-        <div class="modal-form-field">
-          <label for="email" class="modal-form-label">
-            <span>Пошта</span>
-            <span class="modal-form-input-wrapper">
-              <input id="email" type="email" name="email" class="modal-form-input">
-              <svg class="modal-form-icon" height="18" width="18">
+        <div class="modal-form__field">
+          <label class="modal-form__label">
+            <span class="modal-form__name">Пошта</span>
+            <span class="modal-form__input-wrapper">
+              <input id="email" type="email" name="email" class="modal-form__input">
+              <svg class="modal-form__icon" height="18" width="18">
                 <use href="./images/sprite.svg#icon-email"></use>
               </svg>
             </span>
           </label>
         </div>
 
-        <div class="modal-form-field">
-          <label for="comment" class="modal-form-label">
-            <span>Коментар</span>
+        <div class="modal-form__field">
+          <label for="comment" class="modal-form__label">
+            <span class="modal-form__name">Коментар</span>
           </label>
-          <textarea name="comment" id="comment" class="modal-form-input comment" placeholder="Введіть текст"></textarea>
+          <textarea name="comment" id="comment" class="modal-form__input modal-form__input--comment"
+            placeholder="Введіть текст"></textarea>
         </div>
 
-        <div class="modal-form-policy">
-          <input class="modal-form-checkbox visually-hidden" type="checkbox" name="policy" id="policy" value="policy">
-          <label class="modal-form-policy-label" for="policy">Погоджуюся з розсилкою та приймаю
-            <a href="" class="modal-form-policy-link">Умови договору</a>
+        <div class="modal-form__policy">
+          <input class="modal-form__checkbox visually-hidden" type="checkbox" name="policy" id="policy" value="policy">
+          <label class="modal-form__policy-label" for="policy">Погоджуюся з розсилкою та приймаю
+            <a href="" class="modal-form__policy-link">Умови договору</a>
           </label>
         </div>
-        <div class="modal-form-submit">
+        <div class="modal-form__submit">
           <button type="submit" class="button button-submit">Відправити</button>
         </div>
       </form>
       <button class="button--close" data-modal-close>
-        <svg class="button-close-icon" height="18" width="18">
+        <svg class="button__icon" height="18" width="18">
           <use href="./images/sprite.svg#icon-close"></use>
         </svg>
       </button>
     </div>
   </div>
+
   <script src="./js/modal.js"></script>
 </body>
 
